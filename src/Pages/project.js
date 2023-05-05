@@ -1,10 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "./Logo.png";
-import "./style.css";
 
-const About =()=>{
-    return <><header>
+const Project=()=>{
+    return <>
+    <header>
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
     <div className="container-fluid">
     <img src={Logo} alt="React" className="logo"/>
@@ -25,8 +25,8 @@ const About =()=>{
     </div>
     </nav>
     </header>
-<section><h1>About US</h1></section>
-<footer className="text-center text-lg-start bg-white text-muted" id="footer-style">
+    <h1>You can access your digital project diary</h1>
+    <footer className="text-center text-lg-start bg-white text-muted" id="footer-style">
   <section className=" social d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
     <div className="me-5 d-none d-lg-block">
       <span>Get connected with us on social networks:</span>
@@ -113,7 +113,7 @@ const About =()=>{
     <a className="text-reset fw-bold" href="http://google.com/">Website Address</a>
   </div>
 </footer>
-</>;
+    </>
 };
 
-export default About;
+export default Project;

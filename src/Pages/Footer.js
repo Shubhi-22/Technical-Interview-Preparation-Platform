@@ -1,32 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "./Logo.png";
-import "./style.css";
 
-const About =()=>{
-    return <><header>
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-    <div className="container-fluid">
-    <img src={Logo} alt="React" className="logo"/>
-    </div>
-    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul className="navbar-nav mr-auto">
-    <li className="nav-item"><NavLink to="/"><h6 className="menu-item">Home</h6></NavLink></li>
-        <li className="nav-item"><NavLink to="/about"><h6 className="menu-item">About US</h6></NavLink></li>
-        <li className="nav-item"><NavLink to="/service"><h6 className="menu-item">Services</h6></NavLink></li>
-        <li className="nav-item"><NavLink to="/contact"><h6 className="menu-item">Contact US</h6></NavLink></li> 
-        <li className="nav-item"><NavLink to="/help"><h6 className="menu-item">Help</h6></NavLink></li>
-        <li className="nav-item"><button type="button" className="btn btn-light">Sign In</button></li>
-        <li className="nav-item"><button type="button" className="btn btn-dark">Register</button></li>
-    </ul>
-    </div>
-    </nav>
-    </header>
-<section><h1>About US</h1></section>
-<footer className="text-center text-lg-start bg-white text-muted" id="footer-style">
+const Footer=()=>{
+    return <>
+    <footer className="text-center text-lg-start bg-white text-muted" id="footer-style">
   <section className=" social d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
     <div className="me-5 d-none d-lg-block">
       <span>Get connected with us on social networks:</span>
@@ -113,7 +91,8 @@ const About =()=>{
     <a className="text-reset fw-bold" href="http://google.com/">Website Address</a>
   </div>
 </footer>
-</>;
-};
 
-export default About;
+    </>
+}
+
+export default Footer;

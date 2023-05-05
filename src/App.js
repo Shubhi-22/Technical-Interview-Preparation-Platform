@@ -1,23 +1,24 @@
 import './App.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import Home from './Pages/Home';
-import About from './Pages/About';
-import Contact from './Pages/Contact';
-import Services from './Pages/Services';
-import Help from './Pages/Help';
+// import Home from './Pages/Home';
+// import About from './Pages/About';
+// import Contact from './Pages/Contact';
+// import Services from './Pages/Services';
+// import Help from './Pages/Help';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.js';
+// import Project from './Pages/project';
+// import Interview from './Pages/Interview';
+// import Cteacher from './Pages/Cteacher';
+// import Profile from './Pages/Profile';
+// import Progress from './Pages/Progress';
+// import Result from './Pages/result';
+import Routing from './Pages/routes';
+import $ from 'jquery';
 
 function App() {
-  return (
-    <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Home />}/>
-      <Route path="/about" element={<About />}/>
-      <Route path="/contact" element={<Contact />}/>
-      <Route path="/service" element={<Services />}/>
-      <Route path="/help" element={<Help />}/>
-    </Routes>
-    </BrowserRouter>
+  return (    
+    <Routing />
   );
 }
 

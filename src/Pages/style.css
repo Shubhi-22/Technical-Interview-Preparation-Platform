@@ -1,12 +1,25 @@
-@import url("https://fonts.google.com/specimen/Tilt+Neon");
+@import url("https://fonts.google.com/specimen/Exo+2");
+:root{
+    --font-color:black;
+    --background:#e8e6e6;
+    --active-ele:blueviolet;
+    --footer-color:#c7ccd4;
+    --font-family:Exo2;
+}
 *{
     list-style-type: none;
-    color:black;
+    color:var(--font-color);
     box-sizing: border-box;
-    
+    padding:0px 0px;
+   
 }
+.container-fluid{
+    padding:0px;
+}
+
 header{
-    background-color:#e8e6e6 ;
+    background-color:var(--background) ;
+    
 
 }
 /*li{   
@@ -17,24 +30,41 @@ header{
 ul{
     float:right;
 }*/
-.container-fluid{
-    padding: 0 0;
+.navbar{
+    width:100vw;
 }
 .nav-item{
     text-decoration: none; 
     width:100px;
-    color:black;
+    color:var(--font-color);
 }
 .active{
-    color:blueviolet;
+    color:var(--active-ele);
 }
 .logo{
     height:75px;
     width:100px;
     
 }
-.body{
+#menu{
+    display:flex;
+    float:right;
+    margin-left: 600px;
+}
+.menu-item{
+    text-decoration: none;
+    margin-top:13px;
+}
+@media (max-width: 760px) {
+    #menu{
+        margin-left:150px;
+    }
+  }
+/*Image Section*/
+.sec-2{
     height: 100vh;
+    padding-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.025);
 }
 
 .img_banner{
@@ -60,6 +90,7 @@ ul{
     width: 60%;
     padding: 20px;
     text-align: center;
+    font: var(--font-family);
   }
 .txt{
     color:#ffffff;
@@ -69,3 +100,44 @@ ul{
     padding-left: 25px;
     padding-top: 50px;
 }
+/*Features*/
+.sec-3{
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background-color: rgba(0, 0, 0, 0.025);
+}
+.heading{
+    padding-bottom: 80px;
+    text-align: center;
+}
+.card{
+    
+    width:28rem;
+}
+/*.slide{
+    height:100px;
+    width:100;
+}*/
+
+/*media queries*/
+@media (max-width: 760px) {
+    .logo{
+        width:50px;
+        height:50px;
+    }
+    .txt{
+        font-size:12px;
+    }
+  }
+/*footer*/
+
+/*footer{
+    background-color: var(--footer-color);
+}*/
+#footer-style{
+    background-color:rgba(0, 0, 0, 0.025);
+}
+
+/*footer .social{
+    background-color:#c8cbcf;
+}*/
