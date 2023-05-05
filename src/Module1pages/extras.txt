@@ -1,0 +1,3 @@
+flex-column flex-nowrap overflow-hidden
+
+collapse show d-md-flex bg-light pt-2 pl-0 min-vh-100 min-vw-50

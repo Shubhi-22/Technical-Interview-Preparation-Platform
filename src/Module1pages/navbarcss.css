@@ -17,3 +17,28 @@
    max-width: 329.47px;
    max-height:237.99px;
 }
+
+.item{
+    padding-top: 35px;
+}
+
+.logo-item{
+    padding-left: 15px;
+}
+
+.nav{
+    width: 250px;
+}
+
+.sideblock{
+    width:50%;
+    background-color: brown;
+}
+#body-cont{
+    background-color: aqua;
+    padding:0;
+}
+
+/* #vertical_nav{
+    background-color: blue;
+} */
